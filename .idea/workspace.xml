@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> script
+>>>>>>> PORT interpolation on console.log added
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+>>>>>>> servFix
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +145,89 @@
       <workItem from="1610818376356" duration="2364000" />
       <workItem from="1611104822927" duration="734000" />
       <workItem from="1611152465968" duration="13245000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1611152465968" duration="14746000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+      <workItem from="1611174497820" duration="70000" />
+=======
+      <workItem from="1611174497820" duration="423000" />
+      <workItem from="1611176039540" duration="173000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+      <workItem from="1611186909977" duration="43000" />
+>>>>>>> scr
+=======
+      <workItem from="1611186909977" duration="520000" />
+>>>>>>> fix
+=======
+      <workItem from="1611186909977" duration="1043000" />
+>>>>>>> fix
+=======
+      <workItem from="1611186909977" duration="1446000" />
+>>>>>>> fix
+=======
+      <workItem from="1611186909977" duration="2685000" />
+>>>>>>> fix
+=======
+      <workItem from="1611186909977" duration="2867000" />
+>>>>>>> fix
+=======
+      <workItem from="1611186909977" duration="3622000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> fix
+=======
+      <workItem from="1611222269290" duration="17000" />
+>>>>>>> script
+=======
+      <workItem from="1611222269290" duration="580000" />
+>>>>>>> script
+=======
+      <workItem from="1611222269290" duration="1205000" />
+>>>>>>> script
+=======
+      <workItem from="1611222269290" duration="1436000" />
+>>>>>>> script
+=======
+      <workItem from="1611222269290" duration="1768000" />
+>>>>>>> script
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> script
+=======
+=======
+      <workItem from="1611222269290" duration="4025000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1611222269290" duration="4363000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1611222269290" duration="4489000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> fix
+=======
+=======
+      <workItem from="1611222269290" duration="6697000" />
+>>>>>>> servFix
+>>>>>>> servFix
+>>>>>>> PORT interpolation on console.log added
     </task>
     <servers />
   </component>

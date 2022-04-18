@@ -7,6 +7,7 @@
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 =======
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
@@ -15,7 +16,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
 =======
+=======
+      <change afterPath="$PROJECT_DIR$/web.config" afterDir="false" />
+>>>>>>> web.config
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
 >>>>>>> servFix
     </list>
@@ -188,6 +194,7 @@
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> fix
 =======
       <workItem from="1611222269290" duration="17000" />
@@ -226,8 +233,18 @@
 =======
       <workItem from="1611222269290" duration="6697000" />
 >>>>>>> servFix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> servFix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> PORT interpolation on console.log added
+=======
+=======
+=======
+      <workItem from="1611222269290" duration="7039000" />
+      <workItem from="1611259748494" duration="927000" />
+>>>>>>> web.config
+>>>>>>> web.config
+>>>>>>> web.config
     </task>
     <servers />
   </component>

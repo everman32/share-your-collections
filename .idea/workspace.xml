@@ -33,7 +33,6 @@
 =======
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
     </list>
 >>>>>>> asd
@@ -311,11 +310,25 @@
 =======
 =======
       <workItem from="1611345166479" duration="1576000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1611362597947" duration="508000" />
 >>>>>>> redirect-uri-google
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> redirect-uri-google
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> redirect-uri-google
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> redirect-uri-google
+=======
+=======
+=======
+=======
+      <workItem from="1611362597947" duration="641000" />
+      <workItem from="1611371285602" duration="94000" />
+>>>>>>> console.log
+>>>>>>> console.log
+>>>>>>> console.log
+>>>>>>> console.log
     </task>
     <servers />
   </component>

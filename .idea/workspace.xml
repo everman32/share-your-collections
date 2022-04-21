@@ -32,8 +32,8 @@
 >>>>>>> a
 =======
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/item.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/item.model.js" afterDir="false" />
     </list>
 >>>>>>> asd
 >>>>>>> search+likes+eng
@@ -324,11 +324,24 @@
 =======
 =======
       <workItem from="1611362597947" duration="641000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1611371285602" duration="94000" />
 >>>>>>> console.log
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> console.log
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> console.log
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> console.log
+=======
+=======
+=======
+=======
+      <workItem from="1611371285602" duration="296000" />
+>>>>>>> realise1
+>>>>>>> realise1
+>>>>>>> realise1
+>>>>>>> realise1
     </task>
     <servers />
   </component>

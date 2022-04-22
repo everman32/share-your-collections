@@ -32,20 +32,9 @@
 >>>>>>> a
 =======
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/CollectionPage/FilterView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/CollectionPage/SortView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/CollectionPage/CollectionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CollectionPage/CollectionPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/CollectionPage/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CollectionPage/Info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/CollectionPage/ItemsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CollectionPage/ItemsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/SignUpPage/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignUpPage/SignUpPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/languages.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/languages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/shared/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/collections.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/collections.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/CollectionPage/FilterView.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/CollectionPage/FilterView.js" afterDir="false" />
     </list>
 >>>>>>> asd
 >>>>>>> search+likes+eng
@@ -377,11 +366,24 @@
 =======
       <workItem from="1611409225781" duration="15477000" />
       <workItem from="1611450315666" duration="740000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1611520120471" duration="2205000" />
 >>>>>>> relise2
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> relise2
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> relise2
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> relise2
+=======
+=======
+=======
+=======
+      <workItem from="1611520120471" duration="3675000" />
+>>>>>>> someStyles
+>>>>>>> someStyles
+>>>>>>> someStyles
+>>>>>>> someStyles
     </task>
     <servers />
   </component>

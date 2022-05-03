@@ -1,4 +1,10 @@
 node_modules
 /client/node_modules
 /client/build
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 .idea
+=======
+.idea
+.github
+/tempCSV
+>>>>>>> CSV + someFixes

@@ -14,7 +14,11 @@
 >>>>>>> fix
 =======
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> relise6
+=======
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> someFixes
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 =======
@@ -74,7 +78,17 @@
 =======
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="" />
 >>>>>>> relise6
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> relise6
+=======
+=======
+    <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/auth.js" afterDir="false" />
+    </list>
+>>>>>>> someFixes
+>>>>>>> someFixes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -707,6 +721,7 @@
 =======
       <workItem from="1612084367845" duration="1014000" />
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1612087585391" duration="249000" />
 >>>>>>> relise6
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
@@ -714,9 +729,21 @@
 =======
       <workItem from="1612087585391" duration="722000" />
 >>>>>>> relise6
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> relise6
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> relise6
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> relise6
+=======
+=======
+=======
+=======
+      <workItem from="1612087585391" duration="1914000" />
+>>>>>>> someFixes
+>>>>>>> someFixes
+>>>>>>> someFixes
+>>>>>>> someFixes
     </task>
     <servers />
   </component>

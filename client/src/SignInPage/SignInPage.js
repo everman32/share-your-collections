@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react"
+import React, {useCallback, useEffect, useState} from "react"
 import {Button, Col, Container, Form, Nav, Row} from "react-bootstrap"
 import {useRequest} from "../hooks/useRequest.hook"
 import {useDispatch, useSelector} from "react-redux"
@@ -14,13 +14,7 @@ export default function SignInPage() {
     const lang = useSelector(state => state.language)
     const theme = useSelector(state => state.theme)
 
-    useEffect(() => {
-        window.VK.Widgets.Auth('vk_auth', {
-            onAuth: (user) => login("vk", user)
-        })
-    }, [])
-
-    async function login(type, user, lang, theme) {
+    const login = useCallback(async (type, user) => {
         try {
             const data = await request(
                 "/api/auth/login",
@@ -44,7 +38,15 @@ export default function SignInPage() {
         } catch (e) {
             console.log(e.message)
         }
-    }
+    }, [theme, lang])
+
+    useEffect(() => {
+        window.VK.Widgets.Auth('vk_auth', {
+            onAuth: (user) => login("vk", user)
+        })
+    }, [])
+
+
     return (
         <Container className={"mt-4 py-5" + " bg-" + (theme === "dark" ? "semi-dark" : "white")
         + " text-" + (theme === "dark" ? "white-50" : "dark")}>
@@ -86,7 +88,7 @@ export default function SignInPage() {
                         <GoogleLogin
                             clientId="808424836478-45hk3q9s4jbhlc9thn8sud56g7ff1u3m.apps.googleusercontent.com"
                             redirectUri={"https://itransitkurs.herokuapp.com/"}
-                            onSuccess={(res) => login("google", res.profileObj, lang, theme)}
+                            onSuccess={(res) => login("google", res.profileObj)}
                             cookiePolicy={'single_host_origin'}
                         />
                     </Row>

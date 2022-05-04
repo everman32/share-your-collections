@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
+=======
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
+>>>>>>> fix
+=======
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+>>>>>>> fix
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 =======
@@ -38,7 +48,20 @@
       <change beforePath="$PROJECT_DIR$/routes/collections.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/collections.routes.js" afterDir="false" />
     </list>
 >>>>>>> asd
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> search+likes+eng
+=======
+=======
+    <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="" />
+>>>>>>> fix
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
+=======
+=======
+    <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
+    </list>
+>>>>>>> fix
+>>>>>>> fix
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -581,6 +604,9 @@
 =======
       <workItem from="1611931731431" duration="3936000" />
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1612021411269" duration="5646000" />
 >>>>>>> CSV + someFixes
 <<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
@@ -595,9 +621,50 @@
 =======
       <workItem from="1612021411269" duration="8275000" />
 >>>>>>> csvDowload
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> csvDowload
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> csvDowload
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> csvDowload
+=======
+=======
+=======
+=======
+      <workItem from="1612021411269" duration="8848000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612021411269" duration="9602000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612021411269" duration="9646000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+      <workItem from="1612060600067" duration="78000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612060600067" duration="1110000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612060600067" duration="2705000" />
+>>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612060600067" duration="2930000" />
+>>>>>>> fix
+>>>>>>> fix
+>>>>>>> fix
+>>>>>>> fix
     </task>
     <servers />
   </component>

@@ -58,7 +58,8 @@
 =======
 =======
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/shared/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/shared/Header.js" afterDir="false" />
     </list>
 >>>>>>> fix
 >>>>>>> fix
@@ -661,10 +662,29 @@
 =======
 =======
       <workItem from="1612060600067" duration="2930000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> fix
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> fix
+=======
+=======
+=======
+=======
+      <workItem from="1612084367845" duration="457000" />
+>>>>>>> relise4
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+=======
+=======
+      <workItem from="1612084367845" duration="975000" />
+>>>>>>> relise4
+>>>>>>> relise4
+>>>>>>> relise4
+>>>>>>> relise4
     </task>
     <servers />
   </component>

@@ -85,8 +85,9 @@
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/SignInPage/SignInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ItemPage/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ItemPage/Comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ItemPage/ItemFields.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ItemPage/ItemFields.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
     </list>
 >>>>>>> someFixes
 >>>>>>> someFixes
@@ -755,11 +756,25 @@
 =======
       <workItem from="1612087585391" duration="2513000" />
       <workItem from="1612110909033" duration="518000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1612118469148" duration="1437000" />
 >>>>>>> last
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> last
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> last
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> last
+=======
+=======
+=======
+=======
+      <workItem from="1612118469148" duration="1620000" />
+      <workItem from="1612179829793" duration="885000" />
+>>>>>>> superMegaGiperLast
+>>>>>>> superMegaGiperLast
+>>>>>>> superMegaGiperLast
+>>>>>>> superMegaGiperLast
     </task>
     <servers />
   </component>

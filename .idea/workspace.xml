@@ -85,7 +85,6 @@
     <list default="true" id="34dfad1d-17f6-43b8-9e31-d0ce85df3cc7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ItemPage/Comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ItemPage/Comments.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/ItemPage/ItemFields.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ItemPage/ItemFields.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
     </list>
@@ -770,11 +769,24 @@
 =======
 =======
       <workItem from="1612118469148" duration="1620000" />
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
       <workItem from="1612179829793" duration="885000" />
 >>>>>>> superMegaGiperLast
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> superMegaGiperLast
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> superMegaGiperLast
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> superMegaGiperLast
+=======
+=======
+=======
+=======
+      <workItem from="1612179829793" duration="2528000" />
+>>>>>>> superMegaGiperUltraLast
+>>>>>>> superMegaGiperUltraLast
+>>>>>>> superMegaGiperUltraLast
+>>>>>>> superMegaGiperUltraLast
     </task>
     <servers />
   </component>

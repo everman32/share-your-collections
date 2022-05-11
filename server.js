@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express")
 const upload = require("express-fileupload")
 const path = require("path")
@@ -31,7 +32,7 @@ const PORT = process.env.PORT || 5000
 
 db.connect()
     .then(() => {
-        app.listen(PORT, () => console.log(`PORT: ${PORT}`))
+        app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
     })
     .catch((err) => {
         console.log("Server Error", err)

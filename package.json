@@ -1,10 +1,15 @@
 {
-  "name": "kursovaya",
+  "name": "server",
   "version": "1.0.1",
-  "description": "Курсовой проект iTransition",
+  "description": "",
   "main": "server.js",
   "scripts": {
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
     "start": "cross-env NODE_ENV=production node server.js",
+=======
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
+    "start": "NODE_ENV=production node server.js",
+>>>>>>> create .env, edit package.json
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": " cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
@@ -67,9 +72,23 @@
 =======
     "build": "cd client && npm install && cross-env CI=false npm run build"
 >>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> fix
+<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
 >>>>>>> asd
+<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
 >>>>>>> search+likes+eng
+=======
+=======
+=======
+=======
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "npm start --prefix client"
+>>>>>>> create .env, edit package.json
+>>>>>>> create .env, edit package.json
+>>>>>>> create .env, edit package.json
+>>>>>>> create .env, edit package.json
   },
   "keywords": [],
   "author": "",

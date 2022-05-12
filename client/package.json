@@ -16,7 +16,6 @@
     "react-bootstrap-icons": "^1.2.2",
     "react-dom": "^17.0.1",
     "react-drop-zone": "^4.2.3",
-    "react-dropzone": "^11.2.4",
     "react-google-login": "^5.2.1",
     "react-loading": "^2.0.3",
     "react-markdown": "^5.0.3",
@@ -25,8 +24,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-tagsinput": "^3.19.0",
-    "redux": "^4.0.5",
-    "web-vitals": "^0.2.4"
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",

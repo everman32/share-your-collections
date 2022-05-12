@@ -4,7 +4,7 @@ const upload = require("express-fileupload")
 const path = require("path")
 const app = express()
 
-const db = require("./functions/mongoose.connect.js")
+const db = require("./config/mongoose.connect.js")
 
 app.use(express.json({ limit: '15mb' }))
 app.use(upload({

@@ -3,7 +3,7 @@ const userModel = require("../models/user.model");
 
 async function isAuth(req, res, next) {
     try {
-        jwt.verify(req.body.token, "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg", async (err, decoded) => {
+        jwt.verify(req.body.token, process.env.SECKET_KEY, async (err, decoded) => {
             if (err) {
                 return res.status(100).json({ message: err })
             }

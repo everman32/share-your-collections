@@ -70,7 +70,7 @@ router.post(
 
                 const token = jwt.sign(
                     { userId: user._id },
-                    "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg",
+                    process.env.SECKET_KEY,
                     { expiresIn: "6h" }
                 )
 
@@ -82,7 +82,7 @@ router.post(
                 if (user) {
                     const token = jwt.sign(
                         { userId: user._id },
-                        "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg",
+                        process.env.SECKET_KEY,
                         { expiresIn: "6h" }
                     )
                     return res.status(200).json({ token, message: "Пользователь уже записан", user, ok: true })
@@ -104,7 +104,7 @@ router.post(
 
                 const token = jwt.sign(
                     { userId: newUser._id },
-                    "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg",
+                    process.env.SECKET_KEY,
                     { expiresIn: "6h" }
                 )
 
@@ -116,7 +116,7 @@ router.post(
                 if (user) {
                     const token = jwt.sign(
                         { userId: user._id },
-                        "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg",
+                        process.env.SECKET_KEY,
                         { expiresIn: "6h" }
                     )
                     return res.status(200).json({ token, message: "Пользователь уже записан", user, ok: true })
@@ -138,7 +138,7 @@ router.post(
 
                 const token = jwt.sign(
                     { userId: newUser._id },
-                    "aisfhqiuwhfkjasf124iojlkq1124qsd456ysg",
+                    process.env.SECKET_KEY,
                     { expiresIn: "6h" }
                 )
 

@@ -4,91 +4,9 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
-    "start": "cross-env NODE_ENV=production node server.js",
-=======
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-    "start": "NODE_ENV=production node server.js",
->>>>>>> create .env, edit package.json
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": " cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
-    "build": "concurrently \"npm install --prefix client\" \"npm run build --prefix client\""
-<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
-=======
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-=======
-=======
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-    "build":  "npm install --prefix client"
-=======
-=======
-    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\"",
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
->>>>>>> asd
-    "client:build":  "npm run build --prefix client",
-=======
-    "client:build": "npm run build --prefix client",
->>>>>>> search+likes+eng
-    "client:install": "npm install --prefix client",
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-    "build": "npm run client:install && npm run client:build"
->>>>>>> scr
-=======
-    "build": "npm run client:install"
->>>>>>> fix
-=======
-    "build": "npm run client:install && npm run client:build"
->>>>>>> script
-=======
-    "build": "npm run client:install && npm uni react-dev-utils && npm run client:build"
->>>>>>> script
-=======
-    "build": "npm run client:install && npm uni react-dev-utils --prefix client && npm run client:build"
->>>>>>> script
-=======
-    "build": "npm run client:install"
->>>>>>> script
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
->>>>>>> script
-=======
-=======
-    "build": "cd client && npm install && npm run build"
->>>>>>> fix
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-=======
-=======
-    "build": "cd client && npm install && cross-env CI=true npm run build"
->>>>>>> fix
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
-=======
-=======
-    "build": "cd client && npm install && cross-env CI=false npm run build"
->>>>>>> fix
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
->>>>>>> fix
-<<<<<<< 84b5086f0dfaeb92acf31b94575240f54c729cf9
->>>>>>> asd
-<<<<<<< e527e32c7a6f035e3a4bbaa238b3ed0650bab2b3
->>>>>>> search+likes+eng
-=======
-=======
-=======
-=======
     "start": "node server.js",
     "dev": "nodemon server.js",
     "client": "npm start --prefix client"
->>>>>>> create .env, edit package.json
->>>>>>> create .env, edit package.json
->>>>>>> create .env, edit package.json
->>>>>>> create .env, edit package.json
   },
   "keywords": [],
   "author": "",
@@ -101,6 +19,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cloudinary": "^1.23.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
     "express-validator": "^6.9.0",

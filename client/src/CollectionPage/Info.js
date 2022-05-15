@@ -47,7 +47,7 @@ function Info({ info, loadCollection, fields, id, edit }) {
 
     async function downloadCSV() {
         /*const dev = "http://localhost:5000/"*/
-        const product = "https://itransitkurs.herokuapp.com/"
+        const product = process.env.REACT_APP_URL
         window.open(product + "api/collections/getCSV?id=" + info.id + "&name=" + info.name.replace(" ", ""))
     }
 

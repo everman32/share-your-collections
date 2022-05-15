@@ -94,7 +94,7 @@ export default function SignInPage() {
                     <Row style={{ marginTop: "10px", marginLeft: 0 }}>
                         <GoogleLogin
                             clientId="828235718837-perlpild7p84mq5nfgimr52546qpfpje.apps.googleusercontent.com"
-                            redirectUri={"https://share-your-collections.herokuapp.com/"}
+                            redirectUri={"https://share-your-collections.herokuapp.com"}
                             onSuccess={(res) => login("google", res.profileObj)}
                             cookiePolicy={'single_host_origin'}
                         />

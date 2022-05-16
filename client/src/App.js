@@ -1,17 +1,17 @@
 import './styles/App.css';
 import {Redirect, Route, BrowserRouter, Switch} from "react-router-dom";
-import SignUpPage from './SignUpPage/SignUpPage'
-import SignInPage from "./SignInPage/SignInPage";
-import HomePage from "./HomePage/HomePage";
+import SignUpPage from './pages/SignUpPage/SignUpPage'
+import SignInPage from "./pages/SignInPage/SignInPage";
+import HomePage from "./pages/HomePage/HomePage";
 import AdminPage from "./pages/AdminPage/AdminPage"
 import Header from "./shared/Header";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import auth from "./shared/auth.js";
-import CollectionsPage from "./CollectionsPage/CollectionsPage";
-import CollectionPage from "./CollectionPage/CollectionPage";
-import ItemPage from "./ItemPage/ItemPage";
-import SearchPage from "./Search/SearchPage";
+import CollectionsPage from "./pages/CollectionsPage/CollectionsPage";
+import CollectionPage from "./pages/CollectionPage/CollectionPage";
+import ItemPage from "./pages/ItemPage/ItemPage";
+import SearchPage from "./pages/Search/SearchPage";
 
 
 function App() {

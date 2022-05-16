@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useState} from "react"
 import CollectionsContainer from "../CollectionsPage/CollectionsContainer";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import {Container, Row} from "react-bootstrap";
 import ReactLoading from "react-loading";
 

@@ -1,8 +1,8 @@
 import React, {useState} from "react"
 import {Button, Col, Container, Form, Nav, Row} from "react-bootstrap"
-import {useRequest} from "../hooks/useRequest.hook"
+import {useRequest} from "../../hooks/useRequest.hook"
 import {useSelector} from "react-redux";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 export default function SignUpPage() {
     const [email, setEmail] = useState("")

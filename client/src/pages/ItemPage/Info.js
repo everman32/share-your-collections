@@ -4,9 +4,9 @@ import {StyledDropZone} from "react-drop-zone";
 import Image from "cloudinary-react/lib/components/Image";
 import Transformation from "cloudinary-react/lib/components/Transformation";
 import {useSelector} from "react-redux";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import * as Icon from "react-bootstrap-icons"
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function Info({ info, loading2, edit }) {
     const role = useSelector(state => state.role)

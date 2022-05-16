@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react"
 import {useParams} from "react-router";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import ReactLoading from "react-loading";
 import {Container, Row} from "react-bootstrap";
 import Info from "./Info";

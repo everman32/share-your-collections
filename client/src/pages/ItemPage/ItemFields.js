@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react"
 import {Button, Col, Container, Row, Form} from "react-bootstrap";
 import {useSelector} from "react-redux";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import * as Icon from "react-bootstrap-icons"
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function ItemFields({ item, loadItem }) {
     const role = useSelector(state => state.role)

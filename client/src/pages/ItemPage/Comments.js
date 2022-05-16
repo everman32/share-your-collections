@@ -1,10 +1,10 @@
 import React, {useCallback, useEffect, useState} from "react"
 import {useSelector} from "react-redux";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import {Container, Row, Form, Col, Button} from "react-bootstrap";
 import Comment from "./Comment";
 import * as Icon from "react-bootstrap-icons"
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function Comments({ itemID }) {
     const lang = useSelector(state => state.language)

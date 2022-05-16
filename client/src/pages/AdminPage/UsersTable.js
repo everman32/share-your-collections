@@ -3,7 +3,7 @@ import {Container, InputGroup, Row, Table} from "react-bootstrap"
 import User from "./User"
 import ReactLoading from "react-loading"
 import {useDispatch, useSelector} from "react-redux"
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function UsersTable({ usersData, loading, error }) {
     const [users, setUsers] = useState([])

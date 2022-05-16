@@ -8,6 +8,7 @@ let language = require('../languages.json')
 function Header({ isLogged }) {
     const dispatch = useDispatch()
     const userId = useSelector(state => state.userId)
+    const role = useSelector(state => state.role)
     const lang = useSelector(state => state.language)
     const theme = useSelector(state => state.theme)
     const [text, setText] = useState("")
@@ -39,7 +40,11 @@ function Header({ isLogged }) {
                                   key={0}
                         >{language[lang].header.collections}
                         </Nav.Link>,
-                        <Nav.Link href="/search/" key={1}>{language[lang].header.search}</Nav.Link>
+                        <Nav.Link href="/search/" key={1}>{language[lang].header.search}</Nav.Link>,
+                        role === "Admin"?
+                        <Nav.Link href="/admin" key={1}>{language[lang].header.manageusers}</Nav.Link>
+                        :
+                        []
                     ]
                     :
                     [

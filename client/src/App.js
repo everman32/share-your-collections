@@ -3,7 +3,7 @@ import {Redirect, Route, BrowserRouter, Switch} from "react-router-dom";
 import SignUpPage from './SignUpPage/SignUpPage'
 import SignInPage from "./SignInPage/SignInPage";
 import HomePage from "./HomePage/HomePage";
-import AdminPage from "./AdminPage/AdminPage"
+import AdminPage from "./pages/AdminPage/AdminPage"
 import Header from "./shared/Header";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";

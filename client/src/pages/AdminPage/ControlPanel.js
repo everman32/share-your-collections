@@ -1,8 +1,8 @@
 import React, {useEffect} from "react"
 import {Button, ButtonGroup, ButtonToolbar, Container} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
-import {useRequest} from "../hooks/useRequest.hook";
-const languages = require("../languages.json")
+import {useRequest} from "../../hooks/useRequest.hook";
+const languages = require("../../languages.json")
 
 function ControlPanel({ load }) {
     const selected = useSelector(state => state.selected)

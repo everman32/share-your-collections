@@ -6,7 +6,8 @@
       "search": "Поиск",
       "logout": "Выйти",
       "signin": "Вход",
-      "signup": "Регистрация"
+      "signup": "Регистрация",
+      "manageusers": "Управление пользователями"
     },
     "collections": {
       "collection": "Коллекция",
@@ -96,7 +97,8 @@
       "search": "Search",
       "logout": "Logout",
       "signin": "Sign In",
-      "signup": "Sign Up"
+      "signup": "Sign Up",
+      "manageusers": "User management"
     },
     "collections": {
       "collection": "Collection",

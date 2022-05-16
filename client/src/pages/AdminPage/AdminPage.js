@@ -1,6 +1,6 @@
 import React, {useCallback, useEffect, useState} from 'react'
 import UsersTable from "./UsersTable"
-import {useRequest} from "../hooks/useRequest.hook"
+import {useRequest} from "../../hooks/useRequest.hook"
 import {Container} from "react-bootstrap";
 import ControlPanel from "./ControlPanel";
 

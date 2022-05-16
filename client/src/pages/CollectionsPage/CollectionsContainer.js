@@ -2,7 +2,7 @@ import React from "react"
 import {Container, Row} from "react-bootstrap";
 import Collection from "./Collection";
 import {useSelector} from "react-redux";
-const language = require("../languages.json")
+const language = require("../../languages.json")
 
 function CollectionsContainer({ collections }) {
     const lang = useSelector(state => state.language)

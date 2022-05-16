@@ -4,7 +4,7 @@ import { StyledDropZone } from 'react-drop-zone'
 import 'react-drop-zone/dist/styles.css'
 import ReactLoading from "react-loading";
 import {useSelector} from "react-redux";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function CreateCollectionModal({ show, hide, create, loading, error }) {
     const lang = useSelector(state => state.language)

@@ -1,5 +1,5 @@
 import React, {useCallback, useEffect, useState} from "react"
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import ControlPanel from "./ControlPanel";
 import {Container, Row} from "react-bootstrap";
 import {useParams} from "react-router";

@@ -2,8 +2,8 @@ import React, {useState} from "react"
 import {Button, Navbar, Row} from "react-bootstrap";
 import {useSelector} from "react-redux";
 import CreateCollectionModal from "./CreateCollectionModal";
-import {useRequest} from "../hooks/useRequest.hook";
-const language = require("../languages.json")
+import {useRequest} from "../../hooks/useRequest.hook";
+const language = require("../../languages.json")
 
 function ControlPanel({ owner, loadCollections }) {
     const role = useSelector(state => state.role)

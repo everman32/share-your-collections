@@ -3,7 +3,7 @@ import {Button, Col, Form, Modal, Row} from "react-bootstrap"
 import ReactLoading from "react-loading"
 import * as Icon from 'react-bootstrap-icons'
 import {useSelector} from "react-redux";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function ChangeFieldsModal({ fields, show, hide, loading, error, edit }) {
     const lang = useSelector(state => state.language)

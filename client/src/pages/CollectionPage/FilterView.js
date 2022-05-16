@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import {Button, Col, Form, Row} from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons"
 import {useSelector} from "react-redux";
-const language = require("../languages.json")
+const language = require("../../languages.json")
 
 function FilterView({ allItems, setShowedItems }) {
     const [field, setField] = useState({})

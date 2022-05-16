@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useState} from "react"
 import {useParams} from "react-router"
 import Info from "./Info";
 import {Col, Container, Row} from "react-bootstrap";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import ReactLoading from "react-loading";
 import ItemsContainer from "./ItemsContainer";
 

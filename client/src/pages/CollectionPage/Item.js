@@ -4,7 +4,7 @@ import Transformation from "cloudinary-react/lib/components/Transformation";
 import {Button, Card, Col, Row} from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import {useSelector} from "react-redux";
-const language = require("../languages.json")
+const language = require("../../languages.json")
 
 function Item({ item, size }) {
     const theme = useSelector(state => state.theme)

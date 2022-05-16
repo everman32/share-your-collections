@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import {Col, Form, Row} from "react-bootstrap"
 import {useSelector} from "react-redux";
-const language = require("../languages.json")
+const language = require("../../languages.json")
 
 function SortView({ showedItems, setShowedItems, allItems }) {
     const [fields, setFields] = useState(null)

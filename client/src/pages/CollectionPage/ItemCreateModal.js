@@ -5,7 +5,7 @@ import ReactLoading from "react-loading";
 import TagsInput from 'react-tagsinput'
 import 'react-tagsinput/react-tagsinput.css'
 import {useSelector} from "react-redux";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function ItemCreateModal({ create, loading, error, show, hide, fields }) {
     const lang = useSelector(state => state.language)

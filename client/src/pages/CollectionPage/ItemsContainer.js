@@ -4,7 +4,7 @@ import Item from "./Item";
 import {useSelector} from "react-redux";
 import FilterView from "./FilterView";
 import SortView from "./SortView";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function ItemsContainer({ items, size, isFilter }) {
     const lang = useSelector(state => state.language)

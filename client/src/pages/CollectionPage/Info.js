@@ -5,10 +5,10 @@ import Image from "cloudinary-react/lib/components/Image"
 import ReactMarkdown from "react-markdown"
 import ItemCreateModal from "./ItemCreateModal";
 import {StyledDropZone} from "react-drop-zone";
-import {useRequest} from "../hooks/useRequest.hook";
+import {useRequest} from "../../hooks/useRequest.hook";
 import {useSelector} from "react-redux";
 import ChangeFieldsModal from "./ChangeFieldsModal";
-const languages = require("../languages.json")
+const languages = require("../../languages.json")
 
 function Info({ info, loadCollection, fields, id, edit }) {
     const role = useSelector(state => state.role)

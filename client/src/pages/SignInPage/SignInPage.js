@@ -1,10 +1,10 @@
 import React, {useCallback, useEffect, useState} from "react"
 import {Button, Col, Container, Form, Nav, Row} from "react-bootstrap"
-import {useRequest} from "../hooks/useRequest.hook"
+import {useRequest} from "../../hooks/useRequest.hook"
 import {useDispatch, useSelector} from "react-redux"
 import { GoogleLogin } from 'react-google-login'
-import auth from "../shared/auth"
-const languages = require("../languages.json")
+import auth from "../../shared/auth"
+const languages = require("../../languages.json")
 
 export default function SignInPage() {
     const [username, setUsername] = useState("")

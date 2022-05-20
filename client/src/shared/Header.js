@@ -18,7 +18,7 @@ function Header({ isLogged }) {
         }
         else if (localStorage.getItem("type") === "VK") {
             window.VK.Auth.logout((res) => {
-                console.log(res)
+                
             })
         }
         localStorage.removeItem('token')

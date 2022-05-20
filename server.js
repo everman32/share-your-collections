@@ -32,10 +32,10 @@ const PORT = process.env.PORT || 5000
 
 db.connect()
     .then(() => {
-        app.listen(PORT, () => console.log(`Server started on port ${PORT}`))
+        app.listen(PORT, () => {})
     })
     .catch((err) => {
-        console.log("Server Error", err)
+        
         process.exit(0)
     })
 

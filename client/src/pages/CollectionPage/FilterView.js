@@ -26,7 +26,7 @@ function FilterView({ allItems, setShowedItems }) {
         let items = [...allItems]
         filters.forEach(filter => {
             items = items.filter(item => {
-                console.log(item)
+                
                 if (filter.type === "number") {
                     return filter.filterType === "less"
                         ? Number(item.fields[filter.index].value) < filter.value

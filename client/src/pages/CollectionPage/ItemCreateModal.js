@@ -60,8 +60,7 @@ function ItemCreateModal({ create, loading, error, show, hide, fields }) {
         <Form.Group>
           <Form.Text>{languages[lang].advancedFields}</Form.Text>
           {fields.map((field, i) => {
-            if (field.type === "text") {
-              return [
+            return field.type === "text" ? [
                 <Form.Label key={i}>{field.name}</Form.Label>,
                 <Form.Control
                   key={i + 1}
@@ -70,9 +69,7 @@ function ItemCreateModal({ create, loading, error, show, hide, fields }) {
                     item.fields[i].value = e.target.value;
                   }}
                 />,
-              ];
-            } else {
-              return [
+              ] : [
                 <Form.Label key={i}>{field.name}</Form.Label>,
                 <Form.Control
                   key={i + 1}
@@ -85,7 +82,6 @@ function ItemCreateModal({ create, loading, error, show, hide, fields }) {
                   }}
                 />,
               ];
-            }
           })}
         </Form.Group>
         <Form.Group controlId="image">

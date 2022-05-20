@@ -61,9 +61,7 @@ function ItemFields({ item, loadItem }) {
           {values
             ? values.map((e, i) => {
                 if (editMode) {
-                  if (e.type === "text") {
-                    return (
-                      <Row key={i}>
+                  return e.type === "text" ? (<Row key={i}>
                         <span style={{ fontSize: "24px" }} className={"mb-0"}>
                           <strong>{e.name}</strong>:{" "}
                         </span>
@@ -73,11 +71,7 @@ function ItemFields({ item, loadItem }) {
                           onChange={(e) => formHandler(e, i)}
                           value={e.value}
                         />
-                      </Row>
-                    );
-                  } else {
-                    return (
-                      <Row key={i} className={"mb-1"}>
+                      </Row>) : (<Row key={i} className={"mb-1"}>
                         <span style={{ fontSize: "24px" }} className={"mb-0"}>
                           <strong>{e.name}</strong>:{" "}
                         </span>
@@ -87,9 +81,7 @@ function ItemFields({ item, loadItem }) {
                           value={e.value}
                           checked={e.value}
                         />
-                      </Row>
-                    );
-                  }
+                      </Row>);
                 } else {
                   return (
                     <Row className={"mb-3"} key={i}>

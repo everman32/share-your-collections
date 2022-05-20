@@ -237,15 +237,11 @@ router.post("/editCollectionFields", isAuth, async (req, res) => {
 
     items.forEach(async (el) => {
       el.fields = req.body.fields.map((e, i) => {
-        if (e.new !== undefined) {
-          return {
+        return e.new !== undefined ? {
             type: e.type,
             name: e.name,
             value: e.type !== "checkbox" ? "" : false,
-          };
-        } else {
-          return { type: e.type, name: e.name, value: el.fields[i].value };
-        }
+          } : { type: e.type, name: e.name, value: el.fields[i].value };
       });
       await el.save();
     });

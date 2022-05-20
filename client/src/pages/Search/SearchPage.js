@@ -20,6 +20,31 @@ function SearchPage() {
   const [result, setResult] = useState([]);
   const { request, loading } = useRequest();
 
+  async function findItems() {
+    const data = await request(
+      "/api/items/findItems",
+      "POST",
+      {
+        text,
+        tags,
+      },
+      {
+        "Content-Type": "application/json",
+      }
+    );
+    if (data && data.ok) {
+      console.log(data);
+      setResult(data.items);
+    }
+  }
+
+  async function loadTags() {
+    const data = await request("/api/items/getTags");
+    if (data && data.ok) {
+      setAllTags(data.tags);
+    }
+  }
+
   useEffect(() => {
     if (text) findItems().then();
     loadTags().then();
@@ -39,29 +64,25 @@ function SearchPage() {
     );
   }
 
-  async function loadTags() {
-    const data = await request("/api/items/getTags");
-    if (data && data.ok) {
-      setAllTags(data.tags);
-    }
+  function renderSuggestion(suggestion) {
+    return <div className={"suggestion"}>{suggestion.name}</div>;
   }
-
-  async function findItems() {
-    const data = await request(
-      "/api/items/findItems",
-      "POST",
-      {
-        text,
-        tags,
-      },
-      {
-        "Content-Type": "application/json",
-      }
+  
+  function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
+    return (
+      <Autosuggest
+        suggestions={suggestions}
+        shouldRenderSuggestions={(value) => value && value.trim().length > 0}
+        getSuggestionValue={(suggestion) => suggestion.name}
+        renderSuggestion={renderSuggestion}
+        onSuggestionSelected={(e, { suggestion }) => {
+          addTag(suggestion.name);
+        }}
+        inputProps={{ ...props, onChange: props.onChange }}
+        onSuggestionsClearRequested={() => {}}
+        onSuggestionsFetchRequested={() => {}}
+      />
     );
-    if (data && data.ok) {
-      console.log(data);
-      setResult(data.items);
-    }
   }
 
   return (
@@ -115,27 +136,6 @@ function SearchPage() {
       )}
     </Container>
   );
-}
-
-function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
-  return (
-    <Autosuggest
-      suggestions={suggestions}
-      shouldRenderSuggestions={(value) => value && value.trim().length > 0}
-      getSuggestionValue={(suggestion) => suggestion.name}
-      renderSuggestion={renderSuggestion}
-      onSuggestionSelected={(e, { suggestion }) => {
-        addTag(suggestion.name);
-      }}
-      inputProps={{ ...props, onChange: props.onChange }}
-      onSuggestionsClearRequested={() => {}}
-      onSuggestionsFetchRequested={() => {}}
-    />
-  );
-}
-
-function renderSuggestion(suggestion) {
-  return <div className={"suggestion"}>{suggestion.name}</div>;
 }
 
 export default SearchPage;

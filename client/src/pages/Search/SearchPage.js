@@ -67,7 +67,7 @@ function SearchPage() {
   function renderSuggestion(suggestion) {
     return <div className={"suggestion"}>{suggestion.name}</div>;
   }
-  
+
   function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
     return (
       <Autosuggest

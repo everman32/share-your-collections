@@ -1,5 +1,3 @@
-const userModel = require("../models/user.model");
-
 async function isBlocked(req, res, next) {
   try {
     if (req.user.status === "blocked") {

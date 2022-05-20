@@ -327,7 +327,7 @@ router.get("/getCSV", async (req, res) => {
 
     await csv.toDisk(path + name, { allColumns: true, bom: true });
 
-    res.download(path + name, name, (err) => {
+    res.download(path + name, name, () => {
       fs.unlink(path + name, () => {});
     });
   } catch (e) {

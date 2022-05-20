@@ -90,16 +90,18 @@ function SortView({ showedItems, setShowedItems, allItems }) {
             <option value={"lm"}>{language[lang].nameZA}</option>
             {fields &&
               fields.map((e, i) => {
-                return e.type === "number" || e.type === "date" ? [
-                    <option
-                      value={"lm " + String(i) + " " + e.type}
-                      key={i}
-                    >{`${e.name} ${language[lang].lessToMore}`}</option>,
-                    <option
-                      value={"ml " + String(i) + " " + e.type}
-                      key={i + 1}
-                    >{`${e.name} ${language[lang].moreToLess}`}</option>,
-                  ] : null;
+                return e.type === "number" || e.type === "date"
+                  ? [
+                      <option
+                        value={"lm " + String(i) + " " + e.type}
+                        key={i}
+                      >{`${e.name} ${language[lang].lessToMore}`}</option>,
+                      <option
+                        value={"ml " + String(i) + " " + e.type}
+                        key={i + 1}
+                      >{`${e.name} ${language[lang].moreToLess}`}</option>,
+                    ]
+                  : null;
               })}
           </Form.Control>
         </Row>

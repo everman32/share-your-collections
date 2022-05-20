@@ -71,12 +71,16 @@ function ItemPage() {
     loadItem().then();
   }, []);
 
-  return loading ? (<Row className="justify-content-md-center">
-        <ReactLoading type={"spin"} color={"#000000"} height={60} width={60} />
-      </Row>) : (<Container>
-        <Info loading={loading} edit={edit} error={error} info={item} />
-        <ItemFields item={item} loadItem={loadItem} />
-        <Comments itemID={item._id} />
-      </Container>);
+  return loading ? (
+    <Row className="justify-content-md-center">
+      <ReactLoading type={"spin"} color={"#000000"} height={60} width={60} />
+    </Row>
+  ) : (
+    <Container>
+      <Info loading={loading} edit={edit} error={error} info={item} />
+      <ItemFields item={item} loadItem={loadItem} />
+      <Comments itemID={item._id} />
+    </Container>
+  );
 }
 export default ItemPage;

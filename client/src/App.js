@@ -5,7 +5,7 @@ import SignInPage from "./pages/SignInPage/SignInPage";
 import HomePage from "./pages/HomePage/HomePage";
 import AdminPage from "./pages/AdminPage/AdminPage";
 import Header from "./shared/Header";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import auth from "./shared/auth.js";
 import CollectionsPage from "./pages/CollectionsPage/CollectionsPage";

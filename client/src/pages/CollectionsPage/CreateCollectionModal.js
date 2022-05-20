@@ -121,32 +121,28 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
           <Form.Group controlId="themeSelect">
             <Form.Text>{languages[lang].advancedField}</Form.Text>
             {advancedFields.map((e, i) => {
-              if (e.type === "text") {
-                return (
-                  <Form.Control
-                    as="textarea"
-                    placeholder="Enter name of textarea"
-                    onChange={(e) => {
-                      advancedFields[i].name = e.target.value;
-                    }}
-                    className={"mt-2"}
-                    key={i}
-                    rows={3}
-                  />
-                );
-              } else {
-                return (
-                  <Form.Control
-                    type={"input"}
-                    placeholder={"Enter name of " + e.type + " field"}
-                    key={i}
-                    className={"mt-2"}
-                    onChange={(e) => {
-                      advancedFields[i].name = e.target.value;
-                    }}
-                  />
-                );
-              }
+              return e.type === "text" ? (
+                <Form.Control
+                  as="textarea"
+                  placeholder="Enter name of textarea"
+                  onChange={(e) => {
+                    advancedFields[i].name = e.target.value;
+                  }}
+                  className={"mt-2"}
+                  key={i}
+                  rows={3}
+                />
+              ) : (
+                <Form.Control
+                  type={"input"}
+                  placeholder={"Enter name of " + e.type + " field"}
+                  key={i}
+                  className={"mt-2"}
+                  onChange={(e) => {
+                    advancedFields[i].name = e.target.value;
+                  }}
+                />
+              );
             })}
           </Form.Group>
 

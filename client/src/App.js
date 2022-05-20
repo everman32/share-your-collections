@@ -36,68 +36,64 @@ function App() {
   const logged = useSelector((state) => state.isAuthUser);
   const role = useSelector((state) => state.role);
 
-  if (logged) {
-    return (
-      <BrowserRouter>
-        <Header isLogged={logged} />
-        <Switch>
-          <Route path="/" exact>
-            <HomePage />
+  return logged ? (
+    <BrowserRouter>
+      <Header isLogged={logged} />
+      <Switch>
+        <Route path="/" exact>
+          <HomePage />
+        </Route>
+        <Route path="/collections/:ownerId">
+          <CollectionsPage />
+        </Route>
+        <Route path="/collection/:id">
+          <CollectionPage />
+        </Route>
+        <Route path={"/search/:text?"}>
+          <SearchPage />
+        </Route>
+        <Route path="/item/:id">
+          <ItemPage />
+        </Route>
+        {role === "Admin" ? (
+          <Route path="/admin">
+            <AdminPage />
           </Route>
-          <Route path="/collections/:ownerId">
-            <CollectionsPage />
-          </Route>
-          <Route path="/collection/:id">
-            <CollectionPage />
-          </Route>
-          <Route path={"/search/:text?"}>
-            <SearchPage />
-          </Route>
-          <Route path="/item/:id">
-            <ItemPage />
-          </Route>
-          {role === "Admin" ? (
-            <Route path="/admin">
-              <AdminPage />
-            </Route>
-          ) : (
-            []
-          )}
-          <Redirect to="/" />
-        </Switch>
-      </BrowserRouter>
-    );
-  } else {
-    return (
-      <BrowserRouter>
-        <Header isLogged={logged} />
-        <Switch>
-          <Route path="/signUp">
-            <SignUpPage />
-          </Route>
-          <Route path="/item/:id">
-            <ItemPage />
-          </Route>
-          <Route path="/collections/:ownerId">
-            <CollectionsPage />
-          </Route>
-          <Route path={"/search/:text?"}>
-            <SearchPage />
-          </Route>
-          <Route path="/collection/:id">
-            <CollectionPage />
-          </Route>
-          <Route path="/signIn">
-            <SignInPage />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-          <Redirect to="/signUp" />
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+        ) : (
+          []
+        )}
+        <Redirect to="/" />
+      </Switch>
+    </BrowserRouter>
+  ) : (
+    <BrowserRouter>
+      <Header isLogged={logged} />
+      <Switch>
+        <Route path="/signUp">
+          <SignUpPage />
+        </Route>
+        <Route path="/item/:id">
+          <ItemPage />
+        </Route>
+        <Route path="/collections/:ownerId">
+          <CollectionsPage />
+        </Route>
+        <Route path={"/search/:text?"}>
+          <SearchPage />
+        </Route>
+        <Route path="/collection/:id">
+          <CollectionPage />
+        </Route>
+        <Route path="/signIn">
+          <SignInPage />
+        </Route>
+        <Route path="/">
+          <HomePage />
+        </Route>
+        <Redirect to="/signUp" />
+      </Switch>
+    </BrowserRouter>
+  );
 }
 
 export default App;

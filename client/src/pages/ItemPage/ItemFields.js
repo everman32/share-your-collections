@@ -61,35 +61,31 @@ function ItemFields({ item, loadItem }) {
           {values
             ? values.map((e, i) => {
                 if (editMode) {
-                  if (e.type === "text") {
-                    return (
-                      <Row key={i}>
-                        <span style={{ fontSize: "24px" }} className={"mb-0"}>
-                          <strong>{e.name}</strong>:{" "}
-                        </span>
-                        <Form.Control
-                          as={"textarea"}
-                          key={i}
-                          onChange={(e) => formHandler(e, i)}
-                          value={e.value}
-                        />
-                      </Row>
-                    );
-                  } else {
-                    return (
-                      <Row key={i} className={"mb-1"}>
-                        <span style={{ fontSize: "24px" }} className={"mb-0"}>
-                          <strong>{e.name}</strong>:{" "}
-                        </span>
-                        <Form.Control
-                          type={e.type}
-                          onChange={(e) => formHandler(e, i)}
-                          value={e.value}
-                          checked={e.value}
-                        />
-                      </Row>
-                    );
-                  }
+                  return e.type === "text" ? (
+                    <Row key={i}>
+                      <span style={{ fontSize: "24px" }} className={"mb-0"}>
+                        <strong>{e.name}</strong>:{" "}
+                      </span>
+                      <Form.Control
+                        as={"textarea"}
+                        key={i}
+                        onChange={(e) => formHandler(e, i)}
+                        value={e.value}
+                      />
+                    </Row>
+                  ) : (
+                    <Row key={i} className={"mb-1"}>
+                      <span style={{ fontSize: "24px" }} className={"mb-0"}>
+                        <strong>{e.name}</strong>:{" "}
+                      </span>
+                      <Form.Control
+                        type={e.type}
+                        onChange={(e) => formHandler(e, i)}
+                        value={e.value}
+                        checked={e.value}
+                      />
+                    </Row>
+                  );
                 } else {
                   return (
                     <Row className={"mb-3"} key={i}>

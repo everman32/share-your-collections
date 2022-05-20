@@ -101,7 +101,7 @@ export default function SignInPage() {
                     </Row>
 
                     <Row style={{ marginTop: "10px", marginLeft: 0 }}>
-                        <div id="vk_auth"></div>
+                        <div id="vk_auth" />
                     </Row>
 
 

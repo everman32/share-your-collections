@@ -88,14 +88,12 @@ router.post("/getCollections", async (req, res) => {
     const user = await userModel.findOne({ _id: req.body.id });
     const collections = await collectionModel.find({ ownerId: req.body.id });
 
-    res
-      .status(200)
-      .json({
-        message: "Коллекции найдены",
-        owner: user,
-        collections,
-        ok: true,
-      });
+    res.status(200).json({
+      message: "Коллекции найдены",
+      owner: user,
+      collections,
+      ok: true,
+    });
   } catch (e) {
     res.status(500).json({ message: "Что-то пошло не так" });
   }

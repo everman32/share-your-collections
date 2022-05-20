@@ -73,7 +73,7 @@ function SortView({ showedItems, setShowedItems, allItems }) {
                         <option value={"lm"}>{language[lang].nameZA}</option>
                         {
                             fields && fields.map((e, i) => {
-                                if (e.type === "number" || e.type === "date"){ return [
+                                return e.type === "number" || e.type === "date" ? [
                                     <option
                                         value={"lm " + String(i) + " " + e.type}
                                         key={i}
@@ -82,7 +82,7 @@ function SortView({ showedItems, setShowedItems, allItems }) {
                                         value={"ml " + String(i) + " " + e.type}
                                         key={i + 1}
                                     >{`${e.name} ${language[lang].moreToLess}`}</option>
-                                ]} else return null
+                                ] : null;
                             })
                         }
                     </Form.Control>

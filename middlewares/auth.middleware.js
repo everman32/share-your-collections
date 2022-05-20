@@ -1,22 +1,21 @@
-const jwt = require("jsonwebtoken")
+const jwt = require("jsonwebtoken");
 const userModel = require("../models/user.model");
 
 async function isAuth(req, res, next) {
-    try {
-        jwt.verify(req.body.token, process.env.SECKET_KEY, async (err, decoded) => {
-            if (err) {
-                return res.status(100).json({ message: err })
-            }
-            else {
-                const user = await userModel.findOne( { _id: decoded.userId })
+  try {
+    jwt.verify(req.body.token, process.env.SECKET_KEY, async (err, decoded) => {
+      if (err) {
+        return res.status(100).json({ message: err });
+      } else {
+        const user = await userModel.findOne({ _id: decoded.userId });
 
-                req.user = user
-                next()
-            }
-        })
-    } catch(e) {
-        res.status(500).json({ message: "Что-то пошло не так", error: e })
-    }
+        req.user = user;
+        next();
+      }
+    });
+  } catch (e) {
+    res.status(500).json({ message: "Что-то пошло не так", error: e });
+  }
 }
 
-module.exports = isAuth
+module.exports = isAuth;

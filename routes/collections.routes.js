@@ -237,7 +237,7 @@ router.post("/editCollectionFields", isAuth, async (req, res) => {
 
     items.forEach(async (el) => {
       el.fields = req.body.fields.map((e, i) => {
-        return e.new !== undefined
+        return typeof e.new !== "undefined"
           ? {
               type: e.type,
               name: e.name,
@@ -313,7 +313,7 @@ router.get("/getCSV", async (req, res) => {
       };
       item.fields.forEach((field) => {
         obj[field.name] =
-          field.value !== undefined ? field.value.toString() : "no data";
+          typeof field.value !== "undefined" ? field.value.toString() : "no data";
       });
       obj.likes = item.likes.length;
       obj.comments = item.comments.length;

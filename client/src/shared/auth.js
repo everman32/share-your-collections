@@ -11,7 +11,7 @@ export default async function auth(token, dispatch) {
         })
         const data = await res.json()
 
-        console.log("auth", data)
+        
         if (data.ok) {
             dispatch({ type: "AUTH_USER", payload: { id: data.user._id, role: data.user.role } })
             dispatch({ type: "SET_THEME", payload: data.user.theme })

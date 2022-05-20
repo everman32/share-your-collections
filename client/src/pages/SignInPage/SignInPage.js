@@ -44,7 +44,7 @@ export default function SignInPage() {
 
     useEffect(() => {
         const views = Array.from(document.getElementById("vk_auth").childNodes)
-        console.log(views, theme, lang)
+        
         views.forEach(view => {
             view.remove()
         })

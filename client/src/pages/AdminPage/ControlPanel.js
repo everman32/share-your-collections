@@ -11,7 +11,7 @@ function ControlPanel({ load }) {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        console.log(selected)
+        
     }, [selected])
 
     async function control(url) {

@@ -146,12 +146,12 @@ router.post("/createItem", isAuth, async (req, res) => {
     let tagsId = [];
 
     for (let i = 0; i < tags.length; i++) {
-      const tag = await tagModel.findOne({ name: tags[i] });
+      const tag = tagModel.findOne({ name: tags[i] });
 
       if (tag) {
         tag.items = [...tag.items, objectId];
         tag.value = tag.value + 1;
-        await tag.save();
+        tag.save();
         tagsId.push(tag._id);
       } else {
         const tag = new tagModel({
@@ -160,7 +160,7 @@ router.post("/createItem", isAuth, async (req, res) => {
           value: 1,
           items: [objectId],
         });
-        await tag.save();
+        tag.save();
         tagsId.push(tag._id);
       }
     }
@@ -277,17 +277,17 @@ router.post("/deleteCollection", isAuth, async (req, res) => {
 
     for (let i = 0; i < items.length; i++) {
       for (let j = 0; j < items[i].tags.length; j++) {
-        let tag = await tagModel.findOne({ _id: items[i].tags[j] });
+        let tag = tagModel.findOne({ _id: items[i].tags[j] });
         tag.value -= 1;
         if (tag.value <= 0) {
-          await tagModel.deleteOne({ _id: items[i].tags[j] });
+          tagModel.deleteOne({ _id: items[i].tags[j] });
         } else {
           let arr = [...tag.items];
           arr.filter((e) => {
             return e !== items[i]._id;
           });
           tag.items = [...arr];
-          await tag.save();
+          tag.save();
         }
       }
     }

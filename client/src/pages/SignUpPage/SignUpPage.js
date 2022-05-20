@@ -12,7 +12,7 @@ export default function SignUpPage() {
   const lang = useSelector((state) => state.language);
   const theme = useSelector((state) => state.theme);
 
-  async function sendData(e, lang, theme) {
+  async function sendData(e) {
     e.preventDefault();
     try {
       await request(
@@ -35,8 +35,8 @@ export default function SignUpPage() {
         setUsername("");
         setPassword("");
       }
-    } catch (e) {
-      throw e;
+    } catch (err) {
+      throw err;
     }
   }
   return (
@@ -88,7 +88,7 @@ export default function SignUpPage() {
           <Button
             variant="primary"
             type="submit"
-            onClick={(e) => sendData(e, lang, theme)}
+            onClick={(e) => sendData(e)}
             disabled={loading}
           >
             {languages[lang].signUp}

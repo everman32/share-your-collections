@@ -69,7 +69,7 @@ function ItemFields({ item, loadItem }) {
                       <Form.Control
                         as={"textarea"}
                         key={i}
-                        onChange={(e) => formHandler(e, i)}
+                        onChange={(event) => formHandler(event, i)}
                         value={e.value}
                       />
                     </Row>
@@ -80,7 +80,7 @@ function ItemFields({ item, loadItem }) {
                       </span>
                       <Form.Control
                         type={e.type}
-                        onChange={(e) => formHandler(e, i)}
+                        onChange={(event) => formHandler(event, i)}
                         value={e.value}
                         checked={e.value}
                       />

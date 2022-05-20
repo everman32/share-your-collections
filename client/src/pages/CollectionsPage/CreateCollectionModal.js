@@ -125,8 +125,8 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
                 <Form.Control
                   as="textarea"
                   placeholder="Enter name of textarea"
-                  onChange={(e) => {
-                    advancedFields[i].name = e.target.value;
+                  onChange={(event) => {
+                    advancedFields[i].name = event.target.value;
                   }}
                   className={"mt-2"}
                   key={i}
@@ -138,8 +138,8 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
                   placeholder={"Enter name of " + e.type + " field"}
                   key={i}
                   className={"mt-2"}
-                  onChange={(e) => {
-                    advancedFields[i].name = e.target.value;
+                  onChange={(event) => {
+                    advancedFields[i].name = event.target.value;
                   }}
                 />
               );

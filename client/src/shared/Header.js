@@ -114,7 +114,7 @@ function Header({ isLogged }) {
 }
 
 function LanguageChange() {
-  const language = useSelector((state) => state.language);
+  const changedLanguage = useSelector((state) => state.language);
   const dispatch = useDispatch();
   const { request } = useRequest();
 
@@ -138,12 +138,12 @@ function LanguageChange() {
   return (
     <Dropdown className={"mr-2"}>
       <Dropdown.Toggle variant="outline-primary" id="dropdown-basic">
-        {language}
+        {changedLanguage}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
         <Dropdown.Item onClick={setLanguage}>
-          {language === "rus" ? "en" : "rus"}
+          {changedLanguage === "rus" ? "en" : "rus"}
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

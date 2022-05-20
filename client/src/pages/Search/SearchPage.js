@@ -68,7 +68,7 @@ function SearchPage() {
     return <div className={"suggestion"}>{suggestion.name}</div>;
   }
   
-  function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
+  function AutocompleteRenderInput({ addTag, ...props }) {
     return (
       <Autosuggest
         suggestions={suggestions}
@@ -114,7 +114,7 @@ function SearchPage() {
                 }
                 value={tags}
                 inputProps={{ style: { width: "100%" } }}
-                onChange={(tags) => setTags(tags)}
+                onChange={(eventTags) => setTags(eventTags)}
                 onChangeInput={suggestionHandler}
                 inputValue={input}
               />

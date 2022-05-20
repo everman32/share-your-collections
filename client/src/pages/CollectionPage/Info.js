@@ -92,15 +92,15 @@ function Info({ info, loadCollection, fields, id, edit }) {
   }
 
   function tryEdit() {
-    let fields = {};
-    if (values.name !== info.name) fields.name = values.name;
+    let newFields = {};
+    if (values.name !== info.name) newFields.name = values.name;
     if (values.description !== info.description)
-      fields.description = values.description;
-    if (values.file) fields.file = values.file;
-    edit(fields);
+      newFields.description = values.description;
+    if (values.file) newFields.file = values.file;
+    edit(newFields);
   }
 
-  async function editFields(fields) {
+  async function editFields() {
     const data = await request(
       "/api/collections/editCollectionFields",
       "POST",

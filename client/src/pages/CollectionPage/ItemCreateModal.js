@@ -22,7 +22,7 @@ function ItemCreateModal({ create, loading, error, show, hide, fields }) {
     setItem({ ...item, fields });
   }, [fields]);
 
-  function onDrop(file) {
+  function onDrop() {
     const name =
       file.name.length < 12 ? file.name : file.name.substr(0, 9) + "...";
     setDropText(

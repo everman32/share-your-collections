@@ -154,14 +154,14 @@ router.post("/createItem", isAuth, async (req, res) => {
         tag.save();
         tagsId.push(tag._id);
       } else {
-        const tag = new tagModel({
+        const newTag = new tagModel({
           _id: Types.ObjectId(),
           name: tags[i],
           value: 1,
           items: [objectId],
         });
-        tag.save();
-        tagsId.push(tag._id);
+        newTag.save();
+        tagsId.push(newTag._id);
       }
     }
 

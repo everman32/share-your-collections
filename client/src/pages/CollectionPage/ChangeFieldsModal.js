@@ -80,7 +80,7 @@ function ChangeFieldsModal({ fields, show, hide, loading, error, edit }) {
               <Col xs={11}>
                 <Form.Control
                   type={"text"}
-                  onChange={(e) => formHandler(e, i)}
+                  onChange={(event) => formHandler(event, i)}
                   value={values[i].name}
                 />
               </Col>

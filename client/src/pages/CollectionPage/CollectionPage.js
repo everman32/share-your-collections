@@ -37,7 +37,7 @@ function CollectionPage() {
         img_format: data.collection.img_format,
       });
       setFields(data.collection.advancedFields);
-      const items = await request(
+      const getItems = await request(
         "/api/collections/getItems",
         "POST",
         {
@@ -47,13 +47,13 @@ function CollectionPage() {
           "Content-Type": "application/json",
         }
       );
-      if (items && items.ok) {
-        setItems(items.items);
+      if (getItems && getItems.ok) {
+        setItems(getItems.items);
       }
     }
   }, [id, request]);
 
-  async function edit(fields) {
+  async function edit() {
     if (fields.file) {
       const formData = new FormData();
       formData.append("file", fields.file);
@@ -63,7 +63,7 @@ function CollectionPage() {
         fields.img_format = data.img_format;
       }
     }
-    const edit = await request(
+    const editCollection = await request(
       "/api/collections/editCollection",
       "POST",
       {
@@ -76,7 +76,7 @@ function CollectionPage() {
         "Content-Type": "application/json",
       }
     );
-    if (edit && edit.ok) {
+    if (editCollection && editCollection.ok) {
       loadCollection().then();
     }
   }

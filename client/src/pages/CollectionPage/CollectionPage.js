@@ -104,7 +104,7 @@ function CollectionPage() {
             fields={fields}
             edit={edit}
           />
-          <ItemsContainer items={items} size={2} isFilter={true} />
+          <ItemsContainer items={items} size={2} isFilter />
         </Col>
       )}
       <span>{error || ""}</span>

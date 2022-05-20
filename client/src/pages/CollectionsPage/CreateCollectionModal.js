@@ -111,8 +111,7 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
                         <Form.Text>{languages[lang].advancedField}</Form.Text>
                         {
                             advancedFields.map((e, i) => {
-                                if (e.type === "text") {
-                                    return <Form.Control
+                                return e.type === "text" ? <Form.Control
                                         as="textarea"
                                         placeholder="Enter name of textarea"
                                         onChange={(e) => {
@@ -121,10 +120,7 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
                                         className={"mt-2"}
                                         key={i}
                                         rows={3}
-                                    />
-                                }
-                                else {
-                                    return <Form.Control
+                                    /> : <Form.Control
                                         type={"input"}
                                         placeholder={"Enter name of " + e.type + " field"}
                                         key={i}
@@ -132,8 +128,7 @@ function CreateCollectionModal({ show, hide, create, loading, error }) {
                                         onChange={(e) => {
                                             advancedFields[i].name = e.target.value
                                         }}
-                                    />
-                                }
+                                    />;
                             })
                         }
                     </Form.Group>

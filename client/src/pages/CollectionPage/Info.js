@@ -49,8 +49,7 @@ function Info({ info, loadCollection, fields, id, edit }) {
     }
   }
 
-  async function downloadCSV() {
-    /*const dev = "http://localhost:5000/"*/
+  function downloadCSV() {
     const product = process.env.REACT_APP_URL;
     window.open(
       product +

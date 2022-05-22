@@ -1,4 +1,4 @@
-async function isBlocked(req, res, next) {
+function isBlocked(req, res, next) {
   try {
     if (req.user.status === "blocked") {
       return res.status(400).json({ message: "Ваш аккаунт заблокирован" });

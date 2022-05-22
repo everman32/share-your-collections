@@ -14,7 +14,7 @@ function ControlPanel({ load }) {
     console.log(selected);
   }, [selected]);
 
-  async function control(url) {
+  function control(url) {
     selected.map(async (e) => {
       await request(
         "/api/users/" + url,

@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 const userModel = require("../models/user.model");
 
-async function isAuth(req, res, next) {
+function isAuth(req, res, next) {
   try {
     jwt.verify(req.body.token, process.env.SECKET_KEY, async (err, decoded) => {
       if (err) {

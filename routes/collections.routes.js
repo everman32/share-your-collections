@@ -313,7 +313,9 @@ router.get("/getCSV", async (req, res) => {
       };
       item.fields.forEach((field) => {
         obj[field.name] =
-          typeof field.value !== "undefined" ? field.value.toString() : "no data";
+          typeof field.value !== "undefined"
+            ? field.value.toString()
+            : "no data";
       });
       obj.likes = item.likes.length;
       obj.comments = item.comments.length;

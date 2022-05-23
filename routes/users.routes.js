@@ -44,8 +44,7 @@ router.post("/deleteUser", [isAuth, isBlocked, isAdmin], async (req, res) => {
         for (let h = 0; h < items[j].tags.length; h++) {
           let tag = tagModel.findOne({ _id: items[j].tags[h] });
           tag.value -= 1;
-          if (tag.value <= 0)
-            tagModel.deleteOne({ _id: items[j].tags[h] });
+          if (tag.value <= 0) tagModel.deleteOne({ _id: items[j].tags[h] });
           else {
             let arr = [...tag.items];
             arr.filter((e) => {

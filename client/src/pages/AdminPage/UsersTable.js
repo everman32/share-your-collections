@@ -20,8 +20,8 @@ function UsersTable({ usersData, loading, error }) {
 
   useEffect(() => {
     setUsers(
-      usersData.map((e, i) => {
-        return <User user={e} index={i} key={i} />;
+      usersData.map((e) => {
+        return <User user={e} index={e.id} key={e.id} />;
       })
     );
   }, [usersData]);

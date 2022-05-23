@@ -74,20 +74,20 @@ function ChangeFieldsModal({ fields, show, hide, loading, error, edit }) {
         </Row>
 
         <Form.Text>{languages[lang].advancedFields}</Form.Text>
-        {values.map((e, i) => {
+        {values.map((e) => {
           return (
-            <Row key={i} className={"mt-2"}>
+            <Row key={e.id} className={"mt-2"}>
               <Col xs={11}>
                 <Form.Control
                   type={"text"}
-                  onChange={(event) => formHandler(event, i)}
-                  value={values[i].name}
+                  onChange={(event) => formHandler(event, e.id)}
+                  value={values[e.id].name}
                 />
               </Col>
               <Col className={"pl-0 py-1"}>
                 <Icon.XCircle
                   className={"x"}
-                  onClick={() => del(i)}
+                  onClick={() => del(e.id)}
                   style={{ fontSize: "24px" }}
                 />
               </Col>

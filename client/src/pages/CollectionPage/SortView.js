@@ -89,16 +89,16 @@ function SortView({ showedItems, setShowedItems, allItems }) {
             <option value={"ml"}>{language[lang].nameAZ}</option>
             <option value={"lm"}>{language[lang].nameZA}</option>
             {fields &&
-              fields.map((e, i) => {
+              fields.map((e) => {
                 return e.type === "number" || e.type === "date"
                   ? [
                       <option
-                        value={"lm " + String(i) + " " + e.type}
-                        key={i}
+                        value={"lm " + String(e.id) + " " + e.type}
+                        key={e.id}
                       >{`${e.name} ${language[lang].lessToMore}`}</option>,
                       <option
-                        value={"ml " + String(i) + " " + e.type}
-                        key={i + 1}
+                        value={"ml " + String(e.id) + " " + e.type}
+                        key={e.id + 1}
                       >{`${e.name} ${language[lang].moreToLess}`}</option>,
                     ]
                   : null;

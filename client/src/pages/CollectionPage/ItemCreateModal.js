@@ -59,25 +59,25 @@ function ItemCreateModal({ create, loading, error, show, hide, fields }) {
 
         <Form.Group>
           <Form.Text>{languages[lang].advancedFields}</Form.Text>
-          {fields.map((field, i) => {
+          {fields.map((field) => {
             return field.type === "text"
               ? [
-                  <Form.Label key={i}>{field.name}</Form.Label>,
+                  <Form.Label key={field.id}>{field.name}</Form.Label>,
                   <Form.Control
-                    key={i + 1}
+                    key={field.id + 1}
                     as="textarea"
                     onChange={(e) => {
-                      item.fields[i].value = e.target.value;
+                      item.fields[field.id].value = e.target.value;
                     }}
                   />,
                 ]
               : [
-                  <Form.Label key={i}>{field.name}</Form.Label>,
+                  <Form.Label key={field.id}>{field.name}</Form.Label>,
                   <Form.Control
-                    key={i + 1}
+                    key={field.id + 1}
                     type={field.type}
                     onChange={(e) => {
-                      item.fields[i].value =
+                      item.fields[field.id].value =
                         field.type !== "checkbox"
                           ? e.target.value
                           : e.target.checked;

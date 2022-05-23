@@ -56,8 +56,8 @@ function ItemsContainer({ items, size, isFilter }) {
       )}
       <Row className={"w-100 mt-3 m-auto"}>
         {showedItems && showedItems.length > 0 ? (
-          showedItems.map((e, i) => {
-            return <Item item={e} key={i} size={size} />;
+          showedItems.map((e) => {
+            return <Item item={e} key={e.id} size={size} />;
           })
         ) : (
           <h5 className={"text-center w-100"}>

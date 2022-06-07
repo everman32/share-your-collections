@@ -1,5 +1,3 @@
-const fs = require("fs");
-
 const { Router } = require("express");
 const cloudinary = require("cloudinary").v2;
 

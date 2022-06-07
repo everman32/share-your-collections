@@ -25,9 +25,7 @@ function Header({ isLogged }) {
     if (localStorage.getItem("type") === "google") {
       //window.open("https://mail.google.com/mail/u/0/?logout&hl=en", '_blank')
     } else if (localStorage.getItem("type") === "VK") {
-      window.VK.Auth.logout((res) => {
-        console.log(res);
-      });
+      window.VK.Auth.logout();
     }
     localStorage.removeItem("token");
     localStorage.removeItem("type");

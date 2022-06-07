@@ -12,7 +12,6 @@ function ChangeFieldsModal({ fields, show, hide, loading, error, edit }) {
   const [addError, setAddError] = useState("");
 
   useEffect(() => {
-    console.log(fields);
     setValues(fields);
   }, [fields]);
 

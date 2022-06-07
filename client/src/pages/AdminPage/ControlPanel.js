@@ -10,9 +10,7 @@ function ControlPanel({ load }) {
   const { request, loading } = useRequest();
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    console.log(selected);
-  }, [selected]);
+  useEffect(() => {}, [selected]);
 
   async function control(url) {
     selected.map(async (e) => {

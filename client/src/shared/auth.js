@@ -10,7 +10,6 @@ export default async function auth(token, dispatch) {
     });
     const data = await res.json();
 
-    console.log("auth", data);
     if (data.ok) {
       dispatch({
         type: "AUTH_USER",

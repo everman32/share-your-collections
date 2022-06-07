@@ -59,7 +59,6 @@ function SearchPage() {
       }
     );
     if (data && data.ok) {
-      console.log(data);
       setResult(data.items);
     }
   }

@@ -29,12 +29,9 @@ router.post(
       const sameEmail = await UserModel.findOne({ email: req.body.email });
 
       if (sameUsername || sameEmail) {
-        return res
-          .status(400)
-          .json({
-            message:
-              "Пользователь с таким никнеймом или почтой уже существует.",
-          });
+        return res.status(400).json({
+          message: "Пользователь с таким никнеймом или почтой уже существует.",
+        });
       }
 
       const hashedPass = await bcrypt.hash(req.body.password, 8);
@@ -116,14 +113,12 @@ router.post("/login", async (req, res) => {
         expiresIn: "6h",
       });
 
-      res
-        .status(201)
-        .json({
-          token,
-          message: "Пользователь создан",
-          ok: true,
-          user: newUser,
-        });
+      res.status(201).json({
+        token,
+        message: "Пользователь создан",
+        ok: true,
+        user: newUser,
+      });
     } else if (req.body.type === "vk") {
       const user = await UserModel.findOne({ email: req.body.user.uid });
 
@@ -154,14 +149,12 @@ router.post("/login", async (req, res) => {
         expiresIn: "6h",
       });
 
-      res
-        .status(201)
-        .json({
-          token,
-          message: "Пользователь создан",
-          ok: true,
-          user: newUser,
-        });
+      res.status(201).json({
+        token,
+        message: "Пользователь создан",
+        ok: true,
+        user: newUser,
+      });
     }
   } catch (e) {
     res.status(500).json({ message: "Что-то пошло не так ):" });

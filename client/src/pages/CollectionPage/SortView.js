@@ -25,7 +25,7 @@ function SortView({ showedItems, setShowedItems, allItems }) {
     let items = [...showedItems];
     if (!sort) return;
     else if (sort.value === "no") setShowedItems([...allItems]);
-    else if (sort.index === undefined) {
+    else if (typeof sort.index === "undefined") {
       items = items.sort((a, b) => {
         if (sort.value === "ml") {
           return a.name <= b.name ? -1 : 1;

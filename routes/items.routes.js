@@ -125,7 +125,7 @@ router.post("/findItems", async (req, res) => {
       let itemTags = [];
       let priority = 0;
       for (let j = 0; j < items[i].tags.length; j++) {
-        let tag = await tagModel.findOne({ _id: items[i].tags[j] });
+        let tag = tagModel.findOne({ _id: items[i].tags[j] });
         if (tag) itemTags.push(tag);
       }
       for (let k in tags) {
@@ -201,17 +201,17 @@ router.post("/deleteItem", isAuth, async (req, res) => {
     await collection.save();
 
     for (let i = 0; i < item.tags.length; i++) {
-      let tag = await tagModel.findOne({ _id: item.tags[i] });
+      let tag = tagModel.findOne({ _id: item.tags[i] });
       tag.value -= 1;
       if (tag.value <= 0) {
-        await tagModel.deleteOne({ _id: item.tags[i] });
+        tagModel.deleteOne({ _id: item.tags[i] });
       } else {
         let arr = [...tag.items];
         arr.filter((e) => {
           return e !== item._id;
         });
         tag.items = [...arr];
-        await tag.save();
+        tag.save();
       }
     }
 

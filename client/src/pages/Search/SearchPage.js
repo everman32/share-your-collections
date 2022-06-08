@@ -25,20 +25,6 @@ function SearchPage() {
     loadTags().then();
   }, []);
 
-  function suggestionHandler(value) {
-    setInput(value);
-    if (!value) return;
-    setSuggestions(
-      allTags.filter((e) => {
-        let bool = false;
-        for (let i = 0; i <= e.name.length - value.length; i++) {
-          if (e.name.substr(i, value.length) === value) bool = true;
-        }
-        return bool;
-      })
-    );
-  }
-
   async function loadTags() {
     const data = await request("/api/items/getTags");
     if (data && data.ok) {
@@ -61,6 +47,41 @@ function SearchPage() {
     if (data && data.ok) {
       setResult(data.items);
     }
+  }
+
+  function suggestionHandler(value) {
+    setInput(value);
+    if (!value) return;
+    setSuggestions(
+      allTags.filter((e) => {
+        let bool = false;
+        for (let i = 0; i <= e.name.length - value.length; i++) {
+          if (e.name.substr(i, value.length) === value) bool = true;
+        }
+        return bool;
+      })
+    );
+  }
+
+  function renderSuggestion(suggestion) {
+    return <div className={"suggestion"}>{suggestion.name}</div>;
+  }
+
+  function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
+    return (
+      <Autosuggest
+        suggestions={suggestions}
+        shouldRenderSuggestions={(value) => value && value.trim().length > 0}
+        getSuggestionValue={(suggestion) => suggestion.name}
+        renderSuggestion={renderSuggestion}
+        onSuggestionSelected={(e, { suggestion }) => {
+          addTag(suggestion.name);
+        }}
+        inputProps={{ ...props, onChange: props.onChange }}
+        onSuggestionsClearRequested={() => {}}
+        onSuggestionsFetchRequested={() => {}}
+      />
+    );
   }
 
   return (
@@ -114,27 +135,6 @@ function SearchPage() {
       )}
     </Container>
   );
-}
-
-function AutocompleteRenderInput({ addTag, suggestions, ...props }) {
-  return (
-    <Autosuggest
-      suggestions={suggestions}
-      shouldRenderSuggestions={(value) => value && value.trim().length > 0}
-      getSuggestionValue={(suggestion) => suggestion.name}
-      renderSuggestion={renderSuggestion}
-      onSuggestionSelected={(e, { suggestion }) => {
-        addTag(suggestion.name);
-      }}
-      inputProps={{ ...props, onChange: props.onChange }}
-      onSuggestionsClearRequested={() => {}}
-      onSuggestionsFetchRequested={() => {}}
-    />
-  );
-}
-
-function renderSuggestion(suggestion) {
-  return <div className={"suggestion"}>{suggestion.name}</div>;
 }
 
 export default SearchPage;

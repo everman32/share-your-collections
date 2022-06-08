@@ -38,26 +38,25 @@ router.post("/deleteUser", [isAuth, isBlocked, isAdmin], async (req, res) => {
   try {
     let collections = await collectionModel.find({ ownerId: req.body._id });
     for (let i = 0; i < collections.length; i++) {
-      let items = await itemModel.find({ parent: collections[i]._id });
+      let items = itemModel.find({ parent: collections[i]._id });
 
       for (let j = 0; j < items.length; j++) {
         for (let h = 0; h < items[j].tags.length; h++) {
-          let tag = await tagModel.findOne({ _id: items[j].tags[h] });
+          let tag = tagModel.findOne({ _id: items[j].tags[h] });
           tag.value -= 1;
-          if (tag.value <= 0)
-            await tagModel.deleteOne({ _id: items[j].tags[h] });
+          if (tag.value <= 0) tagModel.deleteOne({ _id: items[j].tags[h] });
           else {
             let arr = [...tag.items];
             arr.filter((e) => {
               return e !== items[j]._id;
             });
             tag.items = [...arr];
-            await tag.save();
+            tag.save();
           }
         }
-        await itemModel.deleteOne({ _id: items[j]._id });
+        itemModel.deleteOne({ _id: items[j]._id });
       }
-      await collectionModel.deleteOne({ _id: collections[i]._id });
+      collectionModel.deleteOne({ _id: collections[i]._id });
     }
 
     await UserModel.deleteOne({ _id: req.body._id });

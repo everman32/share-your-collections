@@ -1,3 +1,4 @@
+import React from "react";
 import "./styles/App.css";
 import { Redirect, Route, BrowserRouter, Switch } from "react-router-dom";
 import SignUpPage from "./pages/SignUpPage/SignUpPage";

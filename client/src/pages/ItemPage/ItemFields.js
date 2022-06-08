@@ -59,31 +59,31 @@ function ItemFields({ item, loadItem }) {
             <h2>{languages[lang].itemInfo}: </h2>
           </Row>
           {values
-            ? values.map((e, i) => {
+            ? values.map((e) => {
                 if (editMode) {
                   if (e.type === "text") {
                     return (
-                      <Row key={i}>
+                      <Row key={e.id}>
                         <span style={{ fontSize: "24px" }} className={"mb-0"}>
                           <strong>{e.name}</strong>:{" "}
                         </span>
                         <Form.Control
                           as={"textarea"}
-                          key={i}
-                          onChange={(e) => formHandler(e, i)}
+                          key={e.id}
+                          onChange={(e) => formHandler(e, e.id)}
                           value={e.value}
                         />
                       </Row>
                     );
                   } else {
                     return (
-                      <Row key={i} className={"mb-1"}>
+                      <Row key={e.id} className={"mb-1"}>
                         <span style={{ fontSize: "24px" }} className={"mb-0"}>
                           <strong>{e.name}</strong>:{" "}
                         </span>
                         <Form.Control
                           type={e.type}
-                          onChange={(e) => formHandler(e, i)}
+                          onChange={(e) => formHandler(e, e.id)}
                           value={e.value}
                           checked={e.value}
                         />
@@ -92,7 +92,7 @@ function ItemFields({ item, loadItem }) {
                   }
                 } else {
                   return (
-                    <Row className={"mb-3"} key={i}>
+                    <Row className={"mb-3"} key={e.id}>
                       <div
                         style={{
                           display: "flex",

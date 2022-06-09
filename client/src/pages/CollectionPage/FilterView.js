@@ -115,12 +115,12 @@ function FilterView({ allItems, setShowedItems }) {
                 value={field.control}
               >
                 {allItems &&
-                  allItems[0].fields.map((e, i) => {
+                  allItems[0].fields.map((e) => {
                     if (e.type !== "text" && e.type !== "input") {
                       return (
                         <option
-                          key={i}
-                          value={e.type + " " + e.name + " " + String(i)}
+                          key={e.id}
+                          value={e.type + " " + e.name + " " + String(e.id)}
                         >
                           {e.name}
                         </option>
@@ -194,14 +194,14 @@ function FilterView({ allItems, setShowedItems }) {
         <Row>
           <Col>
             {filters &&
-              filters.map((e, i) => {
+              filters.map((e) => {
                 return (
                   <Row
                     className={
                       "p-2 w-md-75 my-1 justify-content-between " +
                       (theme === "dark" ? "bg-dark" : "bg-light")
                     }
-                    key={i}
+                    key={e.id}
                   >
                     <span>
                       {e.type !== "checkbox"
@@ -211,7 +211,7 @@ function FilterView({ allItems, setShowedItems }) {
                         : `${e.name} filter only ${e.filterType}`}
                     </span>
                     <Icon.XCircle
-                      onClick={() => deleteFilter(i)}
+                      onClick={() => deleteFilter(e.id)}
                       className={"x"}
                     />
                   </Row>

@@ -29,8 +29,8 @@ function CollectionsContainer({ collections }) {
       </Row>
       <Row className={"w-100 mt-3 m-auto"}>
         {collections && collections.length > 0 ? (
-          collections.map((e, i) => {
-            return <Collection collection={e} index={i} key={i} />;
+          collections.map((e) => {
+            return <Collection collection={e} index={e.id} key={e.id} />;
           })
         ) : (
           <h5 className={"text-center w-100"}>

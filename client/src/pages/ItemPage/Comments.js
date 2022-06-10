@@ -79,10 +79,10 @@ function Comments({ itemID }) {
           </span>
         </Row>
       ) : (
-        comments.map((e, i) => {
+        comments.map((e) => {
           return (
             <Comment
-              key={i}
+              key={e.id}
               username={e.username}
               userId={e.userId}
               message={e.message}

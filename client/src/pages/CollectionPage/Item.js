@@ -33,9 +33,9 @@ function Item({ item, size }) {
         </Image>
         <Card.Body>
           <Card.Title>{item.name}</Card.Title>
-          {item.fields.map((e, i) => {
+          {item.fields.map((e) => {
             return (
-              <Card.Text key={i}>
+              <Card.Text key={e.id}>
                 <strong>{e.name + ": "}</strong>{" "}
                 {e.type !== "checkbox" ? (
                   e.value ? (
